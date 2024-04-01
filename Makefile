@@ -1,7 +1,7 @@
 C_FLAGS = -Wall -Wextra -fsanitize=address -g
 CC = gcc
 
-generic_tree_src_path := $(or $(GENERIC_TREE_ROOT), .)
+generic_tree_src_path := $(or $(TREE_INTERFACE_ROOT), .)
 
 bst.c = $(generic_tree_src_path)/src/bst/bst.c
 rbt.c = $(generic_tree_src_path)/src/rbt/rbt.c
